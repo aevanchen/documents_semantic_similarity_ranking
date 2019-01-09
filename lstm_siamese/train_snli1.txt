@@ -1,0 +1,21 @@
+A person on a horse jumps over a broken down airplane.	A person is at a diner, ordering an omelette.	0
+A person on a horse jumps over a broken down airplane.	A person is outdoors, on a horse.	1
+Children smiling and waving at camera	There are children present	1
+Children smiling and waving at camera	The kids are frowning	0
+A boy is jumping on skateboard in the middle of a red bridge.	The boy skates down the sidewalk.	0
+A boy is jumping on skateboard in the middle of a red bridge.	The boy does a skateboarding trick.	1
+An older man sits with his orange juice at a small table in a coffee shop while employees in bright colored shirts smile in the background.	A boy flips a burger.	0
+Two blond women are hugging one another.	The women are sleeping.	0
+Two blond women are hugging one another.	There are women showing affection.	1
+A few people in a restaurant setting, one of them is drinking orange juice.	The people are sitting at desks in school.	0
+A few people in a restaurant setting, one of them is drinking orange juice.	The diners are at a restaurant.	1
+An older man is drinking orange juice at a restaurant.	A man is drinking juice.	1
+An older man is drinking orange juice at a restaurant.	Two women are at a restaurant drinking wine.	0
+A man with blond-hair, and a brown shirt drinking out of a public water fountain.	A blond man wearing a brown shirt is reading a book on a bench in the park	0
+A man with blond-hair, and a brown shirt drinking out of a public water fountain.	A blond man drinking water from a fountain.	1
+Two women who just had lunch hugging and saying goodbye.	The friends scowl at each other over a full dinner table.	0
+Two women who just had lunch hugging and saying goodbye.	There are two woman in this picture.	1
+Two women, holding food carryout containers, hug.	Two groups of rival gang members flipped each other off.	0
+Two women, holding food carryout containers, hug.	Two women hug each other.	1
+A Little League team tries to catch a runner sliding into a base in an afternoon game.	A team is trying to tag a runner out.	1
+A Little League team tries to catch a runner sliding into a base in an afternoon game.	A team is playing baseball on Saturn.	0
