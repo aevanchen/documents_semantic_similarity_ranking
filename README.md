@@ -1,19 +1,19 @@
 # Documental Semantic Similarity Scoring and Ranking
-* project description:
-    This NLP project is funded by Dubai Electricity & Water Authority (DEWA) Company. I participated into it as a summber intern in 2018.   This project aims to filter out duplicate and similar comments and ideas (written in English) in terms of semantics in the Idea Management System. Due to confidentiality agreement, the original dataset will not be accessible here. However, the implemented model is suitable for related text similarity scoring application. 
-* purpose of project
-    To save manpower of human, the duplicated comments (mostly operational suggestions for company improvements). Some of submitted comments are not even form suggestions grammatially or contextually and some suggestions are very similar to each other or have been evaluated before by human operator before (calling by the term 'duplicate comments' here). These document/text are the ones we do not want to spend time looking at again. Therefore, an automatic text filtering system is needed in place to alleviate human workload and to do the duplicate comment detection and delettion for us. The filtered documents will be looked and evaluted by human but the total amount of documents would be drastically reduced after passing through this designed system.
+* Project description:
+
+This NLP project is funded by Dubai Electricity & Water Authority (DEWA) Company. I participated into it as a summber intern in 2018.   This project aims to filter out duplicate and similar comments and ideas (written in English) in terms of semantics in the Idea Management System. Due to confidentiality agreement, the original dataset will not be accessible here. However, the implemented model is suitable for related text similarity scoring application. 
+* Purpose of project:
+
+To save manpower of human, the duplicated comments (mostly operational suggestions for company improvements). Some of submitted comments are not even form suggestions grammatially or contextually and some suggestions are very similar to each other or have been evaluated before by human operator before (calling by the term 'duplicate comments' here). These document/text are the ones we do not want to spend time looking at again. Therefore, an automatic text filtering system is needed in place to alleviate human workload and to do the duplicate comment detection and delettion for us. The filtered documents will be looked and evaluted by human but the total amount of documents would be drastically reduced after passing through this designed system.
 * Model
-    The model in this Gittub is a simple  machine learning model to score two domain-specfic documents in terms of semantic similarity. 
+
+The model in this Gittub is a simple  machine learning model to score two domain-specfic documents in terms of semantic similarity. 
 * Data    
-     A example of input documents is given below:
-     "
-     display dewa advertisements on the mirrors of the restrooms in all customer service centers. display dewa advertisements on the mirrors of the restrooms in all customer service centers. we need to increase our methods of sending our product knowledge to our customers in dewa. how. as a method that being used in some restrooms in cinemas and other places as well. why not display dewa advertisements on the mirrors of the restrooms in all customer service centers. these advertisements will be displayed on the mirrors thru led display which appears and disappears.
-     <p style='color:blue'>"HR needs to prepare a detailed program, obtain MD&CEO approval and submit necessary documents to FD, e.g. copy of the new born baby's passport / birth certificate showing the names of parents, for payment through the payroll."</p>
+A example of input documents is given below:
+"display dewa advertisements on the mirrors of the restrooms in all customer service centers. display dewa advertisements on the mirrors of the restrooms in all customer service centers. we need to increase our methods of sending our product knowledge to our customers in dewa. how. as a method that being used in some restrooms in cinemas and other places as well. why not display dewa advertisements on the mirrors of the restrooms in all customer service centers. these advertisements will be displayed on the mirrors thru led display which appears and disappears.
+<p style='color:blue'>"HR needs to prepare a detailed program, obtain MD&CEO approval and submit necessary documents to FD, e.g. copy of the new born baby's passport / birth certificate showing the names of parents, for payment through the payroll."</p>
      
-     <b>Due to confidentiality agreement, the original dataset will not be accessible here. </b>
-
-
+<b>Due to confidentiality agreement, the original dataset will not be accessible here. </b><br>
 
 
 ## Challenge
@@ -24,8 +24,10 @@ are needed
 4. <b>Small Size Dataset.</b> Fully relying on deep learning might not be wise, some rules should be added to asist for filtering.
 
 ## Acronym Detection
-The notebook to detect and store acronym dictionary is [nootbook](preprocess/acronym.ipynb). The corpus (dewanews.json) is piplined from company related websites to cover more related context and explore more acronyms. The REGEX libary is used to extract the terms. The regular expression to extract a form of acronym and its full expanding expression, e.g., "Human Resourse (HR)" is: 
-</b> "re.findall(r'\b(([A-Z]{1,}[_a-z0-9]+ *){1,}[for|by|to|of|and]* *([A-Z]{1,}[_a-z0-9]+ *){1,}\([A-Za-z]+\))',k)"</b> 
+The notebook to detect and store acronym dictionary is [notebook](preprocess/acronym.ipynb). The corpus (dewanews.json) is piplined from company related websites to cover more related context and explore more acronyms. The REGEX libary is used to extract the terms. The regular expression to extract a form of acronym and its full expanding expression, e.g., "Human Resourse (HR)" is: 
+
+</b> "re.findall(r'\b(([A-Z]{1,}[_a-z0-9]+ *){1,}[for|by|to|of|and]* *([A-Z]{1,}[_a-z0-9]+ *){1,}\([A-Za-z]+\))',k)"</b><br>
+
 The resulted acronym list is stored for text preprocessing.
 
 ##Preproces
@@ -56,6 +58,8 @@ To run the model:
 python train.py 
 
 ```
+
+
 
 * Attention based Nerual Network
 The model is from the paper: [aNMM: Ranking Short Answer Texts with Attention-Based Neural Matching Model](http://maroo.cs.umass.edu/pub/web/getpdf.php?id=1240/)
